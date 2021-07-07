@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export const getData = async () => {
-  const res = await axios('/api/inserts/');
+  const res = await axios('https://server-me12.herokuapp.com/api/inserts/');
   return res.data;
 }
 
 export async function getTotal(mo) {
-  const res = await axios('/api/users');
+  const res = await axios('https://server-me12.herokuapp.com/api/users');
   let amount = 0;
 
   let year = new Date().getFullYear();
@@ -19,7 +19,7 @@ export async function getTotal(mo) {
 }
 
 export async function getTotalEx(mo) {
-  const res = await axios('/api/inserts');
+  const res = await axios('https://server-me12.herokuapp.com/api/inserts');
   let amount = 0;
 
   let year = new Date().getFullYear();
@@ -33,7 +33,7 @@ export async function getTotalEx(mo) {
 }
 
 export const getDataCollege = async () => {
-  const res = await axios('/api/college');
+  const res = await axios('https://server-me12.herokuapp.com/api/college');
   return res.data;
 }
 

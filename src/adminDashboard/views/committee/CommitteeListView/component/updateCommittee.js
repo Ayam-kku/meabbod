@@ -58,7 +58,7 @@ const UpdateUser = (props) => {
     function uploadDataToDB() {
       axios({
           method: 'put',
-          url: `/api/Committee/${props.committee._id}`,
+          url: `https://server-me12.herokuapp.com/api/Committee/${props.committee._id}`,
           data: qs.stringify(committee),
           headers: {
             'content-type': 'application/x-www-form-urlencoded;charset=utf-8'

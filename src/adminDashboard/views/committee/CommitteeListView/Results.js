@@ -60,7 +60,7 @@ const Results = ({ className, customers, ...rest }) => {
   function deleteDataFromDB(id) {
     axios({
         method: 'delete',
-        url: `/api/Committee/${id}`,
+        url: `https://server-me12.herokuapp.com/api/Committee/${id}`,
         headers: {
           'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
         }

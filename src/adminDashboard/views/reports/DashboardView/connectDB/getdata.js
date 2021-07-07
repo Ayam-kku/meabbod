@@ -1,32 +1,32 @@
 import axios from "axios";
 
 async function getData() {
-  const res = await axios('/api/users');
+  const res = await axios('https://server-me12.herokuapp.com/api/users');
   return res.data;
 }
 
 export async function getDataUsers() {
-  const res = await axios('/api/users');
+  const res = await axios('https://server-me12.herokuapp.com/api/users');
   return res.data.slice(-10,res.data.length);
 }
 
 export async function getDataDepartment() {
-  const res = await axios('/api/department');
+  const res = await axios('https://server-me12.herokuapp.com/api/department');
   return res.data.slice(-6,res.data.length);
 }
 
 export async function getDataDepartmentTotal() {
-  const res = await axios('/api/department');
+  const res = await axios('https://server-me12.herokuapp.com/api/department');
   return res.data;
 }
 
 export const getDataCollegeTotal = async () => {
-  const res = await axios('/api/college');
+  const res = await axios('https://server-me12.herokuapp.com/api/college');
   return res.data;
 }
 
 export const getDataCollege = async () => {
-  const res = await axios('/api/college');
+  const res = await axios('https://server-me12.herokuapp.com/api/college');
   return res.data.slice(-5,res.data.length);
 }
 
