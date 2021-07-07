@@ -44,6 +44,7 @@ const CustomerListView = () => {
 
   
     data().then((u) =>setusers(u));
+    console.log(customers);
 
   return (
     <Provider store={store}>

@@ -65,7 +65,7 @@ const AddUser = () => {
   function uploadDataToDB() {
     axios({
         method: 'post',
-        url: '/api/users',
+        url: 'https://server-me12.herokuapp.com/api/users',
         data: qs.stringify(users),
         headers: {
           'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
